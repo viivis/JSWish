@@ -10,8 +10,8 @@ exports.getAddWishPage =
 }
 exports.postAddWishes = 
 (req, res) => {
-        console.log(req.body.title);
-        const wish = new Wish(req.body.title);
+        console.log(req.body.wish);
+        const wish = new Wish(req.body.wish);
         wish.saveWish();
         res.redirect('/');
     };

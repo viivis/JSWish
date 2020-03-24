@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = class Wish {
-    constructor(wishTitle){
-    this.title = wishTitle;
+    constructor(wish){
+    this.wish = wish;
     }
 
     saveWish() {
