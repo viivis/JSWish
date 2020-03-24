@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/wish.css">
+</head>
+
+<body>
+        <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <h1>My Wishes <img src="https://www.upload.ee/thumb/11330242/1492532801-20-wishlist_83219__1_.png" alt="Wishlist"> </h1>
+        <p>List of all the wishes...</p>
+        
+        <% if(wishes.length > 0) { %>
+      
+            <% wishes.forEach(wish =>{ %>
+                
+                  <li><b>Wish:</b> <i><%= wish.title %> </i></li> 
+               
+        
+            <% }) %>
+        </div> 
+        <% } else { %>
+            <h1>No Wishes Found</h1>
+            <img src="https://www.upload.ee/image/11330216/pngguru.com.png" alt="A Emoticon">
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>
