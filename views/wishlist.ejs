@@ -13,7 +13,7 @@
       
             <% wishes.forEach(wishlist =>{ %>
                 
-                  <li><b>Wish:</b> <i><%= wishlist.wish %> </i></li> 
+                  <li><b>Wish:</b> <i><%= wishlist.wish %> </i><a href="/delete/<%= wishlist.id %>">Kustuta</a></li> 
                
         
             <% }) %>

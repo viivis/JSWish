@@ -1,7 +1,18 @@
 
-const fs = require('fs');
+//const fs = require('fs');
+const mongoose = require('mongoose');
 const path = require('path');
 
+const Schema = mongoose.Schema;
+
+const wishSchema = new Schema({
+    wish: {
+        type: String
+    }
+})
+
+mongoose.model('Wish', wishSchema);
+/*
 module.exports = class Wish {
     constructor(wish){
     this.wish = wish;
@@ -37,4 +48,4 @@ module.exports = class Wish {
         callBack(JSON.parse(fileContent));
     });
     }
-}
+} */

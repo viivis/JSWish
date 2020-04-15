@@ -6,5 +6,6 @@ const router = express.Router();
 const wishesController = require('../controllers/wishes');
 
 router.get('/', wishesController.getWishes);
+router.get('/delete/:id', wishesController.deleteWish);
 
 module.exports = router;

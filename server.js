@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+require('./models/db');
 const userRoute = require('./routes/wishlist');
 const adminRoute = require('./routes/admin');
 
